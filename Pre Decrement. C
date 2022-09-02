@@ -1,0 +1,17 @@
+// get number from user and identify the predecrement operator to print it on console
+#include<stdio.h>
+int getNumberFromUser () {
+    int number;
+   scanf ("%d",& number);
+   return number;
+}
+int identifyThepredecrementNumber(int a) {
+    return --a;
+}
+void main() {
+    printf ("enter your number");
+    int a = getNumberFromUser();
+    int predecrement = 
+    identifyThepredecrementNumber(a);
+    printf ("value is%d",predecrement);
+}
