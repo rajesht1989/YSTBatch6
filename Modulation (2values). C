@@ -1,0 +1,18 @@
+// get two number from user and modulation them print it on console
+#include<stdio.h>
+int getTwoNumberFromUser () {
+    int number;
+    scanf ("%d",&number);
+    return number;
+}
+int modulationTwoNumberFromUser (int a,int b) {
+    return a%b;
+}
+void main () {
+    printf ("enter a first number");
+    int a = getTwoNumberFromUser ();
+    printf ("enter a second number") ;
+    int b = getTwoNumberFromUser () ;
+    int modulation = modulationTwoNumberFromUser(a,b);
+    printf ("Modulation is%d",modulation);
+}
