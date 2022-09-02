@@ -1,0 +1,18 @@
+// get two number from user and subtraction assisgnment operator to print it on console
+#include<stdio.h>
+int getTwoNumberFromUser () {
+    int number;
+    scanf ("%d",&number);
+    return number;
+}
+int subtractionAssignmentOperator (int a,int b) {
+    return (a-=b) ;
+}
+void main () {
+    printf ("enter a first number");
+    int a = getTwoNumberFromUser ();
+    printf ("enter a second number") ;
+    int b = getTwoNumberFromUser () ;
+    int subtraction = subtractionAssignmentOperator(a,b);
+    printf ("%d",subtraction);
+}
