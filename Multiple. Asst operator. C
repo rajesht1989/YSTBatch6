@@ -1,0 +1,18 @@
+// get two number from user and multiplication assisgnment operator to print it on console
+#include<stdio.h>
+int getTwoNumberFromUser () {
+    int number;
+    scanf ("%d",&number);
+    return number;
+}
+int multiplicationAssignmentOperator (int a,int b) {
+    return (a*=b) ;
+}
+void main () {
+    printf ("enter a first number ");
+    int a = getTwoNumberFromUser ();
+    printf ("enter a second number ") ;
+    int b = getTwoNumberFromUser () ;
+    int multiplication = multiplicationAssignmentOperator(a,b);
+    printf ("%d",multiplication);
+}
