@@ -5,12 +5,6 @@ int getNumberFromUser (){
     scanf ("%d",&a);
     return a;
 }
-int lengthOfRectangle (int l){
-    return (l);
-}
-int breathOfRectangle (int b){
-    return b;
-}
 int identifyTheArea (int l,int b){
     return (l*b);
 }
