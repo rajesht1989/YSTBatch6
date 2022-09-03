@@ -1,0 +1,30 @@
+// write a program to get rectangle length & breath get from user and identify the area and perimeter
+#include <stdio.h>
+int getNumberFromUser (){
+    int a;
+    scanf ("%d",&a);
+    return a;
+}
+int lengthOfRectangle (int l){
+    return (l);
+}
+int breathOfRectangle (int b){
+    return b;
+}
+int identifyTheArea (int l,int b){
+    return (l*b);
+}
+    int identifyThePerimeter (int l, int b){
+    return 2*(l+b);
+}
+void main (){
+    printf ("enter a length ");
+    int l = getNumberFromUser ();
+        printf ("enter a breath ");
+        int b = getNumberFromUser();
+        int area = identifyTheArea (l, b);
+        int perimeter = identifyThePerimeter (l,b);
+        printf ("Area the value of %d
+        \n", area);
+        printf ("Perimeter the value of %d \n", perimeter);
+    }
