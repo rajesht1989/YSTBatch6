@@ -1,0 +1,18 @@
+// write a program to get height & base from user and identify the triangle area
+#include<stdio.h>
+float  getNumberFromUser() {
+    float number;
+    scanf ("%f",&number);
+    return number;
+}
+float areaOfTriangle (float h, float b){
+    return (b*h)/2;
+}
+void main () {
+    printf ("enter a height ");
+    float h= getNumberFromUser() ;
+    printf ("enter a base ");
+    float b = getNumberFromUser() ;
+    float area =areaOfTriangle(h,b) ;
+    printf ("area of value%f\n", area);
+}
