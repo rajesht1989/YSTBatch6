@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int getNumberFromUser(){
+int number;
+scanf("%d",&number);
+return number;
+}
+void identifyPostIncrement(int a){
+   printf("Ontheline postIncrement %d\n",a++);
+      printf("Afterline postIncrement %d\n",a);
+}
+void identifyPreIncrement(int a){
+    printf("ontheline preIncrement %d\n",++a);
+    printf("Afterline preIncrement %d\n",a);
+}
+void identifyPostDecrement(int a){
+    printf("ontheline postDecrement %d\n",a--);
+    printf("Afterline postDecrement %d\n",a);
+}
+void identifyPreDecrement(int a){
+    printf("ontheline preDecrement %d\n",--a);
+    printf("Aftertheline preDecrement%d\n",a);
+}
+void main(){
+ printf("Enter a number ");
+ int a = getNumberFromUser();
+ identifyPostIncrement(a);
+ identifyPreIncrement(a);
+ identifyPostDecrement(a);
+ identifyPreDecrement(a);
+}
