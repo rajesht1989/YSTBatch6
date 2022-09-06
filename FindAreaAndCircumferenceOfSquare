@@ -1,0 +1,23 @@
+// writw a programe to get number from user and identify area and circumference of square
+#include <stdio.h>
+int getNumberFromUser(){
+    int v;
+    printf("Enter A Number ");
+    scanf("%d",&v);
+    return v;
+}
+int findAreaOfSquare(int a){
+    return (a*a);
+}
+int findCircumferenceOfSquare(int b){
+    return (4*(b*b));
+}
+int main() {
+    int number = getNumberFromUser();
+    int area = findAreaOfSquare(number);
+    int circumference = findCircumferenceOfSquare(number);
+    printf("Area is %d\n ",area);
+    printf("Circumference is %d ",circumference);
+
+    return 0;
+}
