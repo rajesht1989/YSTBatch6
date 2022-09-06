@@ -1,0 +1,23 @@
+// writw a programe to get number from user and identify the number is Equal to nineteen
+#include <stdio.h>
+int getNumberFromUser(){
+    int a;
+    printf("Enter a number ");
+    scanf("%d",&a);
+    return a;
+}
+int findNumberIsEqualToNineteen(int a){
+    if (a == 19 ){
+          printf("Number is equal to nineteen ");
+    }else {
+        printf("Number is not equal to  nineteen ");
+    }
+    
+}
+
+void main() {
+ 
+    int number1 = getNumberFromUser();
+    findNumberIsEqualToNineteen(number1);
+   
+}
