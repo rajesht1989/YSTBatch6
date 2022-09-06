@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int getNumberFromUser(){
+int a;
+scanf("%d",&a);
+return a;
+}
+int identifyAndGate(int a,int b, int c)
+{
+ return (a<b)&&(b<c)&&(c>a);      
+}
+int main()
+{
+    printf(" enter your first number ");
+    int a=getNumberFromUser();
+    printf(" enter your second number ");
+    int b=getNumberFromUser();
+    printf(" enter your third number ");
+    int c=getNumberFromUser();
+    int AndGate=identifyAndGate(a,b,c);
+    printf("AndGate%d",AndGate);
+}
+    
