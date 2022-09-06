@@ -1,0 +1,20 @@
+//get a age from user and identify the elegible for vote
+#include<stdio.h>
+int getAgeFromUser(){
+int a;
+scanf("%d",&a);
+return a;
+}
+int eligibleForVote(int a){
+    if (a>=18){
+    printf(" eligible for vote ");  
+}else{
+    printf(" not eligible for vote ");
+}
+}
+void main(){
+    printf(" enter a age ");
+    int age= getAgeFromUser();
+    eligibleForVote(age);
+}
+    
