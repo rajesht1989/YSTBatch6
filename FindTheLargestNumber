@@ -1,0 +1,24 @@
+// writw a programe to get number from user and identify the largest number
+#include <stdio.h>
+int getNumberFromUser(){
+    int a;
+    scanf("%d",&a);
+    return a;
+}
+int findNumberIsLargestNumber(int a,int b){
+    if (a < b){
+          printf("largest number is b ");
+    }else {
+        printf("largest number is  a");
+    }
+    
+}
+
+void main() {
+   printf("Enter a first number ");
+    int number1 = getNumberFromUser();
+     printf("Enter a second number ");
+       int number2 = getNumberFromUser();
+    findNumberIsLargestNumber(number1,number2);
+   
+}
