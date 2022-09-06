@@ -1,0 +1,22 @@
+// writw a programe to get number from user and find Number Is Above Ten And Below Tewenty
+#include <stdio.h>
+int getNumberFromUser(){
+    int a;
+    scanf("%d",&a);
+    return a;
+}
+int findNumberIsAboveTenAndBlowTewenty(int a){
+    if ((a > 10) && (a < 20)){
+          printf("NumberIsAboveTenAndBlowTewenty");
+    }else {
+        printf("none of the above ");
+    }
+    
+}
+
+void main() {
+   printf("Enter a first number ");
+    int number1 = getNumberFromUser();
+  findNumberIsAboveTenAndBlowTewenty(number1);
+   
+}
