@@ -1,0 +1,23 @@
+// writw a programe to get number from user and identify area  of triangle
+#include <stdio.h>
+float getNumberFromUser(){
+    float i;
+    scanf("%d",&i);
+    return i;
+}
+float findAreaOfRectangle(float  hight ,float base){
+    return ((hight*base)/2);
+}
+
+void main() {
+    printf("Enter a hight ");
+    float number1 = getNumberFromUser();
+      printf("Enter a base\n ");
+       float number2 = getNumberFromUser();
+    float area = findAreaOfRectangle(number1,number2);
+    
+    printf("Area is %d\n",area);
+   
+
+    return 0;
+}
