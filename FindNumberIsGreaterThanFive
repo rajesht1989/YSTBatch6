@@ -1,0 +1,23 @@
+// writw a programe to get number from user and identify the number is >5
+#include <stdio.h>
+int getNumberFromUser(){
+    int k;
+    printf("Enter a number ");
+    scanf("%d",&k);
+    return k;
+}
+int findNumberIsGreaterThanFive(int a){
+    if (a > 5){
+          printf("Number is greater than five ");
+    }else {
+        printf("Number is lowest than five ");
+    }
+    
+}
+
+void main() {
+ 
+    int number1 = getNumberFromUser();
+    findNumberIsGreaterThanFive(number1);
+   
+}
