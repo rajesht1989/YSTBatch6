@@ -1,0 +1,23 @@
+// writw a programe to get number from user and identify the number is < 100
+#include <stdio.h>
+int getNumberFromUser(){
+    int r;
+    printf("Enter a number ");
+    scanf("%d",&r);
+    return r;
+}
+int findNumberIsLowestThanHundered(int a){
+    if (a < 100){
+          printf("Number is lowest than hundered ");
+    }else {
+        printf("Number is greater than hundered ");
+    }
+    
+}
+
+void main() {
+ 
+    int number1 = getNumberFromUser();
+    findNumberIsLowestThanHundered(number1);
+   
+}
