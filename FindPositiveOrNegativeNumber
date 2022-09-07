@@ -1,0 +1,21 @@
+// write a program to get number from user and find positive or negative number print it on console 
+#include <stdio.h>
+int getNumberFromUser(){
+    int i;
+    scanf("%d",&i);
+    return i;
+}
+int checkPositiveOrNegativeNumber(int c){
+    if (c > 0){
+        printf("Its positive value ");
+    }else if (c < 0){
+           printf("Its negative value ");
+    }else{
+         printf("Its nutral value ");
+    }
+}
+void main() {
+    printf("Enter a first number ");
+    int number1 = getNumberFromUser();
+   checkPositiveOrNegativeNumber(number1);
+}
