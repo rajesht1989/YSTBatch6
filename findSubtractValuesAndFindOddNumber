@@ -1,0 +1,27 @@
+//// write a program to get number from user and subtract them find odd number print it on console 
+#include <stdio.h>
+int getNumberFromUser(){
+    int i;
+    scanf("%d",&i);
+    return i;
+}
+int findSubtractValue (int a,int b){
+    return (a - b);
+}
+int checkOddNumber(int c){
+    if (c % 2 != 0){
+        printf("Its odd value ");
+    }
+    else{
+         printf("this not add value");
+    }
+}
+void main() {
+    printf("Enter a first number ");
+    int number1 = getNumberFromUser();
+    printf("Enter a second number ");
+    int number2 = getNumberFromUser();
+    int subtract = findSubtractValue (number1,number2);
+       printf("subtract value is %d\n",subtract);
+   checkOddNumber(subtract);
+}
