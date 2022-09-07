@@ -1,0 +1,28 @@
+// writw a programe to get number from user and find the colour code 
+#include <stdio.h>
+int getNumberFromUser(){
+    int a;
+    scanf("%d",&a);
+    return a;
+}
+int findTheColourCode(int a,int b,int c){
+    if ((a == 255) &&(b == 255) && (c == 255)) {
+          printf("Its a white color");
+    }else if  (b == 000000) {
+        printf("Its a Black and White colour");
+    }else {
+        printf("None of the above");
+    }
+    
+}
+
+void main() {
+   printf("Enter a first colour code ");
+    int number1 = getNumberFromUser();
+     printf("Enter a second colour code  ");
+       int number2 = getNumberFromUser();
+         printf("Enter a third colour code  ");
+       int number3 = getNumberFromUser();
+   findTheColourCode(number1,number2,number3);
+   
+}
