@@ -1,0 +1,27 @@
+// writw a programe to get number from user and find the eligible for marriage
+#include <stdio.h>
+int getNumberFromUser(){
+    int a;
+    scanf("%d",&a);
+    return a;
+}
+int findTheEligibleForMarriage(int a){
+    if (a == 25)  {
+          printf(" avlo veri mappllaikku ");
+    }else if (a > 25){
+          printf(" boomer uncle ");
+    }
+    else if  (a == 18) {
+        printf(" mahli life matter uh ");
+    }else if (a < 18) {
+        printf(" kili kichuruven ");
+    }
+    
+}
+
+void main() {
+   printf("Enter a first number ");
+    int number1 = getNumberFromUser();
+   findTheEligibleForMarriage(number1);
+   
+}
