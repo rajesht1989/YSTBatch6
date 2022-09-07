@@ -1,0 +1,27 @@
+// write a program to get number from user and cushion them and find even number print it on console 
+#include <stdio.h>
+int getNumberFromUser(){
+    int i;
+    scanf("%d",&i);
+    return i;
+}
+int findCushionThem(int a,int b){
+    return (a / b);
+}
+int checkEvenNumber(int c){
+    if (c % 2 == 0){
+        printf("Its even number ");
+    }else{
+           printf("Its odd number ");
+    }
+}
+void main() {
+    printf("Enter a first number ");
+    int number1 = getNumberFromUser();
+    printf("Enter a first number ");
+    int number2 = getNumberFromUser();
+    int cushion =  findCushionThem(number1,number2);
+    printf ("cushion value is %d\n",cushion);
+    checkEvenNumber(cushion);
+  
+}
