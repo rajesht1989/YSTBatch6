@@ -1,0 +1,35 @@
+// write a program to get letter from user and print girls name print it on console
+#include<stdio.h>
+char getLetterFromUser(){
+    char letter;
+    printf("Enter a letter ");
+    scanf("%c",& letter);
+    return letter;
+}
+char printName(char a){
+    if (a == 'a'|| a == 'A'){
+        printf("Anitha");
+    }
+    else if (a == 'b' || a == 'B'){
+                printf("Brintha");
+
+    }
+    else if (a == 'c' || a == 'C'){
+                printf("Catherine");
+
+ }  else if (a == 'd' || a == 'D'){
+                printf("Diya");
+
+  }  else if (a == 'f' || a == 'F'){
+                printf("Filomina");
+}else {
+                    printf("pechiyammal");
+
+}
+  
+}
+void main(){
+  
+    char letter = getLetterFromUser();
+   printName(letter);
+}
