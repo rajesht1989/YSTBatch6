@@ -1,0 +1,18 @@
+//write a program to identify the eligible for vote to print it on console
+#include<stdio.h>
+int getNumberFromUser() {
+    int age;
+    scanf ("%d",& age);
+    return age;
+}
+void identifyTheEligibleForVote (int a){
+    if (a>18){
+    printf ("eligible for vote");
+    }else{
+    printf ("not eligible for vote");
+}}
+void main () {
+    printf ("enter your age ") ;
+    int a = getNumberFromUser() ;
+    identifyTheEligibleForVote (a);
+}
