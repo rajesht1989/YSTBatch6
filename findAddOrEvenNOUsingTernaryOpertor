@@ -1,0 +1,15 @@
+//write a program to get number from user and find odd or even number using terinary operter 
+# include <stdio.h>
+int getNumberFromUser (){
+    int i;
+    printf ("Enter a number ");
+    scanf("%d",& i);
+    return i;
+}
+void findOddOrEvenNumber (int a) {
+    (a % 2 == 0 ) ? printf ("Even number") : printf ("Odd number");
+}
+void main (){
+    int number = getNumberFromUser();
+    findOddOrEvenNumber (number);
+}
