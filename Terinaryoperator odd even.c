@@ -7,7 +7,7 @@
  }
  void terinaryOperatorNumber(int a){
     
-          (a %2==0) ? printf("odd") : printf("even");
+          (a %2==0) ? printf("even") : printf("odd");
         
         
  }
