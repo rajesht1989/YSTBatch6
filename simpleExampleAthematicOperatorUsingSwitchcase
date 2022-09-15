@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int a,operator,b;
+void getNumberFromUser(){
+    printf("enter a expression ");
+    scanf("%d %c %d",&a, &operator, &b);
+}
+int calculations(int a,char operator,int b){
+    switch(operator){
+    case '+':
+    printf("%d %c %d=%d",a,operator,b,a+b);
+    break;
+    case '-':
+    printf("%d %c %d = %d",a,operator,b,a-b);
+    break;
+    case '*':
+    printf("%d %c %d = %d",a,operator,b,a*b);
+    break;
+    case '/':
+    printf("%d %c %d = %d",a,operator,b,a/b);
+    break;
+    case '%':
+    printf("%d %c %d = %d",a,operator,b,a%b);
+    break;
+    default :
+    printf("none");
+    break;
+    }
+    return operator;
+}
+void main(){
+    getNumberFromUser();
+    calculations(a,operator,b);
+}
