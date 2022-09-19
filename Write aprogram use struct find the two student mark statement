@@ -1,0 +1,37 @@
+include <stdio.h>
+typedef struct{
+   int mark1,mark2,mark3,mark4;
+   char initial;
+   int id;
+}Student ;
+    Student getStudentMarkFromUser(){
+    Student S;
+    printf(" enter a initial ");
+    scanf("%c",&S.initial);
+    printf("enter a id ");
+    scanf("%d", & S.id);
+    printf(" enter a mark1 ");
+    scanf("%d", &S.mark1);
+    printf(" enter a mark2");
+    scanf("%d", &S.mark2);
+    printf(" enter a mark3");
+    scanf("%d", &S.mark3);
+    printf(" enter a mark4");
+    scanf("%d", &S. mark4);
+   
+    }
+    int totalMark(Student S){
+        return S.mark1+S.mark2+S.mark3+S.mark4;
+    }
+    void main(){
+   Student S1 = getStudentMarkFromUser();
+   Student S2= getStudentMarkFromUser();
+   int t1= totalMark(S1);
+   int t2 =totalMark(S2);
+   if (t1>t2){
+      printf("%C is better performer",S1.initial);
+   }
+      else{
+       printf("%C id better performer", S2.initial);
+   }
+   }
