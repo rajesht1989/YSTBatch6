@@ -1,0 +1,33 @@
+// write a program get number frm user add and divide by 6 and 12
+
+#include <stdio.h>
+int getNumberFromUser(){
+ int number;
+ scanf("%d", & number );
+ return number ;
+}
+int addThoseManyNumber(int a){
+    int addition=0;
+   for(int i=0;i<a;i++){
+     printf(" enter a number %d \n", i+1);
+   addition +=getNumberFromUser();
+}
+return addition;
+}
+void identifyDivisibleBySix(int a){
+    if(a%12==0){
+   printf("the give number is divisible by twelve");
+  } else if (a%6==0){
+   printf("the give number is divisible by six");
+    }else{
+     printf("the given number is not divisible by six");
+    }}
+  
+int main(){
+    printf("enter a number ");
+    int a= getNumberFromUser();
+    int addition=addThoseManyNumber(a);
+  printf("addition is %d ", addition);
+  identifyDivisibleBySix(addition );
+  
+}
