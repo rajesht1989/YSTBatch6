@@ -1,0 +1,24 @@
+// write a program get number frm user hallow square 
+
+#include <stdio.h>
+int getNumberFromUser(){
+ int number;
+ scanf("%d", &number );
+ return number ;
+}
+int hallowSquare(int a){
+   for(int j=1;j<=a;j++){
+   for(int i=1;i<=a;i++){
+  if(i==1||i==a||j==1||j==a){
+    printf("*\t");
+   }else{
+   printf("\t");
+   }
+   }
+   printf("\n");
+}}
+void main(){
+    printf("enter the number ");
+    int a=getNumberFromUser();
+    hallowSquare(a);
+}
